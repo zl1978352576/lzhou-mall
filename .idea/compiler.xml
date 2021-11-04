@@ -6,8 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lzhou-mall" />
+        <module name="lzhoumall-product" />
+        <module name="renren-generator" />
+        <module name="lzhoumall-member" />
+        <module name="lzhoumall-coupon" />
+        <module name="lzhoumall-ware" />
+        <module name="renren-fast" />
+        <module name="lzhoumall-order" />
+        <module name="gulimall-common" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="lzhoumall-product" options="-parameters" />
+      <module name="renren-fast" options="-parameters" />
+      <module name="renren-generator" options="-parameters" />
+    </option>
   </component>
 </project>
